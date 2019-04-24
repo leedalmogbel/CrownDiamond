@@ -9,7 +9,7 @@
     <div class="sidebar-brand-icon rotate-n-15">
       <i class="fas fa-crown"></i>
     </div>
-    <div class="sidebar-brand-text mx-3">Jocelyn Jasmin</div>
+    <div class="sidebar-brand-text mx-3">{{ $name }}</div>
   </a>
 
   <!-- Divider -->
@@ -51,7 +51,7 @@
       <i class="fas fa-fw fa-wrench"></i>
       <span>Utilities</span>
     </a>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+    {{-- <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Custom Utilities:</h6>
         <a class="collapse-item" href="utilities-color.html">Colors</a>
@@ -59,7 +59,7 @@
         <a class="collapse-item" href="utilities-animation.html">Animations</a>
         <a class="collapse-item" href="utilities-other.html">Other</a>
       </div>
-    </div>
+    </div> --}}
   </li>
 
   <!-- Divider -->

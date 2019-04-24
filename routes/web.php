@@ -16,6 +16,12 @@ Route::get('/', function () {
 });
 
 
-Route::get('/admin', function () {
-    return view('admin.admin');
+// Route::get('/dashboard', function () {
+//     return view('dashboard.dashboard');
+// });
+
+Route::get('/dashboard', 'DashboardController@dashboard');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
