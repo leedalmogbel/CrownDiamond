@@ -12,11 +12,7 @@
 */
 
 Route::get('/', function () {
-    if(Auth::check()) {
-        return redirect('/dashboard');
-    } else {
-        return view('/admin/login');
-    }
+    return view('welcome');
 });
 
 
@@ -25,6 +21,13 @@ Route::get('/', function () {
 // });
 
 Route::get('/dashboard', 'DashboardController@dashboard');
+
+Route::get('/dashboard/logout', function(){
+    Session::flush();
+    Auth::logout();
+    return Redirect::to("/admin/login")
+      ->with('message', array('type' => 'success', 'text' => 'You have successfully logged out'));
+});
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

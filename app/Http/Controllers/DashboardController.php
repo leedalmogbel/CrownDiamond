@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+use TCG\Voyager\Facades\Voyager;
+
 class DashboardController extends Controller
 {
     //
@@ -13,9 +15,13 @@ class DashboardController extends Controller
     public function dashboard() {
         $user = Auth::user();
         // dd($temp);
-        return view ('dashboard.dashboard',
-            ['name' => $user->name]
-        );
+        if(Auth::check()) {
+            return view ('dashboard.dashboard',
+                ['name' => $user->name]
+            );
+        } else {
+            return Voyager::view('voyager::login');
+        }
     }
 
 }

@@ -29,11 +29,11 @@
 
         <!-- Nav Item - Search Dropdown (Visible Only XS) -->
         <li class="nav-item dropdown no-arrow d-sm-none">
-            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{-- <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-search fa-fw"></i>
-            </a>
+            </a> --}}
             <!-- Dropdown - Messages -->
-            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+            {{-- <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
             <form class="form-inline mr-auto w-100 navbar-search">
                 <div class="input-group">
                 <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
@@ -44,7 +44,7 @@
                 </div>
                 </div>
             </form>
-            </div>
+            </div> --}}
         </li>
 
         <!-- Nav Item - Alerts -->
@@ -55,7 +55,7 @@
             <span class="badge badge-danger badge-counter">3+</span>
             </a>
             <!-- Dropdown - Alerts -->
-            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+            {{-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
             <h6 class="dropdown-header">
                 Alerts Center
             </h6>
@@ -93,7 +93,7 @@
                 </div>
             </a>
             <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-            </div>
+            </div> --}}
         </li>
 
         <!-- Nav Item - Messages -->
@@ -104,7 +104,7 @@
             <span class="badge badge-danger badge-counter">7</span>
             </a>
             <!-- Dropdown - Messages -->
-            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+            {{-- <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
             <h6 class="dropdown-header">
                 Message Center
             </h6>
@@ -149,7 +149,7 @@
                 </div>
             </a>
             <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-            </div>
+            </div> --}}
         </li>
 
         <div class="topbar-divider d-none d-sm-block"></div>
@@ -174,7 +174,7 @@
                 Activity Log
             </a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+            <a class="dropdown-item" href="/dashboard/logout" data-toggle="modal" data-target="#logoutModal">
                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                 Logout
             </a>
