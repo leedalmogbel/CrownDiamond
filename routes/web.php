@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if(Auth::check()) {
+        return redirect('/dashboard');
+    } else {
+        return view('/admin/login');
+    }
 });
 
 
