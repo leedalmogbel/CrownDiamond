@@ -24,4 +24,12 @@ class DashboardController extends Controller
         }
     }
 
+    public function edit() {
+        $user = \Auth::user();
+        return view (
+            'dashboard.edit',
+            ['name' => $user->name]
+        );
+    }
+
 }

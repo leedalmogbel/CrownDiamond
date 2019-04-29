@@ -113,7 +113,7 @@
   </div>
 
   <div class="text-center d-none d-md-inline">
-    <img class="img-fluid" src="assets/imgs/logo.png" alt="">
+    <img class="img-fluid" src="{{ asset('assets/imgs/logo.png') }}" alt="">
   </div>
 
 </ul>

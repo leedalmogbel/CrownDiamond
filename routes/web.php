@@ -15,19 +15,17 @@ Route::get('/', function () {
     return Voyager::view('voyager::login');
 });
 
-
 // Route::get('/dashboard', function () {
 //     return view('dashboard.dashboard');
 // });
 
 Route::get('/dashboard', 'DashboardController@dashboard');
 
-Route::get('/dashboard/logout', function(){
-    Session::flush();
-    Auth::logout();
-    return Redirect::to("/admin/login")
-      ->with('message', array('type' => 'success', 'text' => 'You have successfully logged out'));
-});
+Route::get('/dashboard/edit', 'DashboardController@edit');
+
+
+Route::get('/dashboard/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
