@@ -1,7 +1,6 @@
 body.login { background-image: none; }
 
 body.login .wrapper {
-    background-image: url(http://127.0.0.1:8000/admin/assets?path=images%2Fbg.jpg);
     background-size: cover;
     height: 100vh;
 }

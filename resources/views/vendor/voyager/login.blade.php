@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="none" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <link rel="shortcut icon" href="{{ voyager_asset('images/favicon.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ URL::asset('assets/imgs/favicon.ico') }}" type="image/x-icon">
     <meta name="description" content="admin login">
     <title>Login - {{ Voyager::setting("admin.title") }}</title>
     <link rel="stylesheet" href="{{ voyager_asset('css/app.css') }}">
@@ -46,7 +46,7 @@
     <div class="row no-gutters">
         {{-- <div class="faded-bg animated"></div> --}}
         <div class="hidden-xs col-sm-7 col-md-8">
-            <div class="wrapper">
+        <div class="wrapper" style="background-image: url('{{URL::asset('assets/imgs/bg.jpg')}}');">
                 {{-- <div class="row">
                     <div class="col-sm-12 col-md-10 col-md-offset-2"> --}}
                         <div class="logo-title-container">
