@@ -20,6 +20,7 @@ class DashboardController extends Controller
                 ['name' => $user->name]
             );
         } else {
+            dd($user);
             return Voyager::view('voyager::login');
         }
     }
