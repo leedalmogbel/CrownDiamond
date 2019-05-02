@@ -12,6 +12,10 @@
 */
 
 Route::get('/', function () {
+    if(Auth::check()) {
+        return redirect ('/dashboard');
+    }
+
     return Voyager::view('voyager::login');
 });
 
